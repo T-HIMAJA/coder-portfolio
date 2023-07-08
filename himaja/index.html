@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibe" content="IE-edge">
+    <meta name="Viewport" content="width-device-width, initial-scale-1.o">
+    <title>Coder Portfolio website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm <span><br>HIMAJA TADIPATRI</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about---------- -->
+    <div id="about">
+         <div class="container">
+             <div class="row">
+                <div class="about-col-1">
+                      <img src="images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>HIMAJA is completely down to earth and sweet and kind.
+                    she is the best friend anybody could everone wish.
+                    I think i am very smart, sweet, good looking and extremely intelient girl.
+                    Ofcourse i am quick learner and i am able to learn things very fastlly.
+                    I am eagerly waiting for to work in reputed company with my absolute efforts and ideas.
+                    so this is about me.</p>
+
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Designing web/App interfaces</li>
+                            <li><span>Web Design</span><br>Web app Development</li>
+                            <li><span>App Design</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> UX Designer creating user and customer experiences designed to have engaging user interfaces(UI) 
+                        and
+                        deliver tangible business results.</p>
+                    <a href="#">learn more</a>
+               </div>
+               <div>
+                   <i class="fas fa-crop-alt"></i>
+                   <h2>Web Design</h2>
+                   <p>Web Designer create and build wedsites and web pages by combining any number of visual design 
+                    elements
+                    including TEXT,PHOTOS,GRAPHICS,   ANIMATIONS and VIDEOS. a web Designer could create a brand new 
+                    website or
+                    simply make updates to the design and layout of existing pages.</p>
+                   <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App Designer is an interactive development environment for designing an app layout and
+                        programming its behaviour.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- ----------Portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.Download it from play store.</p>
+                        <a href="#">see more<i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you yo the talented people around the world.Download it from play store.</p>
+                        <a href="#">see more<i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.Download it from play store.</p>
+                        <a href="#">see more<i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i> Contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.txt" download class="btn btn2">Download CV</a> 
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="emain" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 0 HIMAJA  Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementByclassname("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+               tablink.ClassList.remove("active-link");
+            }
+            for(tabcontent of tabcontent){
+               tabcontent.ClassList.remove("active-tab");
+            }
+            event.currentTarget.ClassList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");   
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html
